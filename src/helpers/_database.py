@@ -14,7 +14,7 @@ from src.logger import LOGGER
 class Database:
     def __init__(self):
         self.mongo_client = AsyncMongoClient(MONGO_URI)
-        _db = self.mongo_client["MusicBot"]
+        _db = self.mongo_client["Inflex"]
         self.chat_db = _db["chats"]
         self.users_db = _db["users"]
         self.bot_db = _db["bot"]
